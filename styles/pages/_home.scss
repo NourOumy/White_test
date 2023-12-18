@@ -1,0 +1,85 @@
+.intro{
+    background: url(../../images/slider_background.jpg) center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    .intro__content{
+        width: 90%;
+        margin: 0 auto;
+       display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        .intro__title{
+            color: white;
+            font-size: 48px;
+        }
+        .yellow_title{
+            background-color: #ffb606;
+        }
+    }
+    
+    .navpage_button{
+        display: none;
+        // height: 58px;
+        // width: 58px;
+        // background-color: white;
+        // text-decoration: none;
+        // color: black;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+    }
+}
+
+.subnav{
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.subnav__option{
+    text-decoration: none;
+    color: white;
+    height: 161px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    &:hover{
+        background-color: #ffb606;
+        img{
+            background-color: white;
+        }
+        path{
+        fill: #ffff;
+        }
+    }
+    
+    svg{
+        width: 62px;
+        height: 62px;
+        margin-left: 40px;
+    }
+
+    // img{
+    //     width: 62px;
+    //     height: 62px;
+    //     margin-left: 40px;
+
+    // }
+    h4{
+        font-weight: bold;
+        font-size: 20px;
+        text-transform: capitalize;
+        margin: 0;
+    }
+    .subnav__option_viewmore{
+        font-size: 12px;
+        &:hover{
+            color: black;
+        }
+
+    }
+}
