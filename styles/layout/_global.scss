@@ -11,3 +11,41 @@ body{
 .wrapper{
     width: 95%;
 }
+
+hr{
+    margin-top: 100px;
+    width: 10%;
+    height: 3px;
+    background-color: #ffb606;
+    border: 0;
+}
+
+h2{
+text-align: center;
+margin-bottom: 80px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.button{
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 30px;
+
+}
+.button_large{
+    background-color: #ffb606;
+    color: white;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.seventy_height{
+    height: 70vh;
+}
