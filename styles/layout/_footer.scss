@@ -23,10 +23,7 @@ footer{
         color: white; 
     }
 }
-img{
-    height: 15px;
-    width: 15px;
-}
+
 }
 
 .flexnav{
@@ -61,4 +58,17 @@ nav{
         text-transform: capitalize
         ;
     }
+}
+
+.footer_end{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer__social_logos{
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 80px;
 }

@@ -1,8 +1,10 @@
 .intro{
     background: url(../../images/slider_background.jpg) center/cover;
     height: 100vh;
+    width: 100%;
     display: flex;
     align-items: center;
+    font-size: 48px;
     .intro__content{
         width: 95%;
         margin: 0 auto;
@@ -10,12 +12,14 @@
         justify-content: space-between;
         align-items: center;
         text-align: center;
+        color: white;
         .intro__title{
-            color: white;
             font-size: 48px;
+            line-height: 70px;
         }
         .yellow_title{
             background-color: #ffb606;
+            padding: 5px;
         }
     }
     
