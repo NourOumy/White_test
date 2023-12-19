@@ -1,4 +1,7 @@
 .contact_page{
+    .intro{
+        background: url(../../images/contact_background.jpg) center/cover;
+    }
     h1{
         margin-bottom: 100px;
     }
@@ -14,8 +17,11 @@
         color: #6e6e6e;
         border: 0;
         padding-left: 20px;
+        width: 100%;
     }
-    
+    .textarea{
+        width: 100%;
+    }
     .join{
         h1{
             margin-bottom: 40px;
@@ -27,5 +33,14 @@
 
     .footer__nav{
         margin-top: 40px;
+    }
+
+    .map {
+        width: 100%;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        div{
+            text-align: center;
+        }
     }
 }

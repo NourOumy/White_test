@@ -69,3 +69,9 @@ a{
         width: 15px;
     }
 }
+
+.boxshadow_hover{
+    &:hover{
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.384);
+    }
+}

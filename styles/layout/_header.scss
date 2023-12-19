@@ -39,9 +39,37 @@ header{
     align-items: center;
     justify-content: space-evenly;
     cursor: pointer;}
-    .header__burger_menu div{
-    height: 3px;
-    width: 80%;
-    background-color: #000;
-    border-radius: 3px;
-        }  
+
+.header__burger_menu div{
+height: 3px;
+width: 80%;
+background-color: #000;
+border-radius: 3px;
+    }  
+
+.header__nav{
+    display: none;
+    
+}    
+
+
+    @media screen and (min-width: 740px){
+        header{
+            gap: 80px;
+        }
+        .header__burger_menu{
+            display: none;
+        }
+        .header__nav{
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            a{
+                color: #000;
+            }
+        }    
+
+
+    }
+        
+    

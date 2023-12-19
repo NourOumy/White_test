@@ -9,7 +9,7 @@
         width: 95%;
         margin: 0 auto;
        display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         align-items: center;
         text-align: center;
         color: white;
@@ -25,14 +25,7 @@
     
     .navpage_button{
         display: none;
-        // height: 58px;
-        // width: 58px;
-        // background-color: white;
-        // text-decoration: none;
-        // color: black;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
+        
     }
 }
 
@@ -53,9 +46,6 @@
     gap: 15px;
     &:hover{
         background-color: #ffb606;
-        img{
-            background-color: white;
-        }
         path{
         fill: #ffff;
         }
@@ -67,12 +57,6 @@
         margin-left: 40px;
     }
 
-    // img{
-    //     width: 62px;
-    //     height: 62px;
-    //     margin-left: 40px;
-
-    // }
     h4{
         font-weight: bold;
         font-size: 20px;
@@ -103,6 +87,9 @@
         .course__title{
             text-decoration: none;
             color: black;
+            &:hover{
+                color: #a5a5a5;
+            }
         }
         .course__subtitle{
             font-size: 12px;
@@ -151,6 +138,7 @@
         span{color: black;}
         p{font-size: 12px; line-height: 25px; margin-bottom: 60px;
         }
+        
     }
 
 }
@@ -165,7 +153,7 @@
 }
 
 .search__content{
-      width: 90vw;
+      width: 80%;
       margin: 0 auto;
       padding-top: 60px;
     }
@@ -182,7 +170,7 @@ form{
     }
 }
 
-.services{
+.services, .services_rows{
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -236,6 +224,10 @@ form{
     .student_name{
         color: #ffb606;
     }
+
+    .circles{
+        display: none;
+    }
 }
 
 .events{
@@ -275,3 +267,110 @@ form{
         font-size: 30px;
     }
 }
+
+@media screen and (min-width: 740px){
+    .homepage{
+        .navpage_button{
+            display: inline-block;
+            max-width : 58px;
+            width: 58px;
+            height: 58px;
+            max-height: 58px;
+            font-size: 15px;
+            background-color: white;
+            text-decoration: none;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .testimonial{
+            .circles{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+            width: 80px;
+            .circle{
+                border: 3px solid white;
+               border-radius: 100%;
+                height: 10px;
+                width: 10px;
+                &:nth-of-type(2){
+                    border-color: #ffb606;
+                    background-color: #ffb606;
+                    height: 15px;
+                    width: 15px;
+                }
+            }
+        }
+        
+            
+
+        }
+    }
+}
+
+@media screen and (min-width: 980px){
+    .subnav{
+        margin-top: -200px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+    .courses{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    .registration-search{
+        display: grid;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .services_rows{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 80px;
+    }
+
+    .event{
+        display: grid;
+        grid-template-columns:(0.5fr 2fr 1fr);
+        img{
+            order: 3;
+        }
+    }
+    .middle_footer{
+        display: grid;
+        grid-template-columns: (1fr 3fr);
+        margin-left: 20px;
+        .course__subtitle{
+            width: 80%;
+        }
+    }
+    .footer__navs{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .suscribe{
+        display: grid;
+        grid-template-columns: (3fr 1fr);
+        
+        form{
+            width: 100%;
+            margin-bottom: 0;
+        }
+    }
+
+    .touch-join{
+        display: grid;
+        grid-template-columns: 
+        repeat(2, 1fr);
+        align-items: baseline;
+    }
+    
+}
+
